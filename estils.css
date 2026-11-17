@@ -1,3 +1,14 @@
+/* CONFIGURACIÓN GENERAL */
+
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.platform-content > p:first-child {
+    font-family: 'JetBrains Mono', monospace;
+}
+
 /* HEADER */
 
 header {
@@ -139,4 +150,83 @@ nav a {
 
 .hero-buttons a:hover {
     opacity: 0.8;
+}
+
+
+/* PLATFORM */
+
+.platform {
+    padding: 100px 5%;
+    background-color: #fbfbfa;
+}
+
+.platform-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.platform-content > p:first-child {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #777777;
+}
+
+.platform h2 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.platform-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.platform-cards article {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.platform-cards h3,
+.platform-core h3 {
+    font-size: 20px;
+}
+
+.platform-cards p,
+.platform-core p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+.platform-core {
+    margin-top: 20px;
+    padding: 25px 30px;
+    border-radius: 16px;
+    background-color: #f0efed;
+}
+
+.platform-content > p:last-child {
+    margin-top: 35px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* MESSAGE */
+
+.message {
+    padding: 65px 5%;
+    text-align: center;
+    background-color: #171717;
+    color: white;
+}
+
+.message p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 1.5;
 }
