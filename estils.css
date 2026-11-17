@@ -1,4 +1,3 @@
-
 /* HEADER */
 
 header {
@@ -27,4 +26,117 @@ nav div {
 nav a {
     color: #222222;
     text-decoration: none;
+}
+
+
+/* HERO */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 650px;
+    padding: 80px 5%;
+
+    background:
+        radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%),
+        radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%),
+        #fbfbfa;
+}
+
+/* CONTENEDOR */
+
+.hero > .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* TEXTO */
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero-content > img {
+    width: 50px;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 500;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg, #54b9a2, #a54bd5);
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* BOTONES */
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* IMAGEN NEXUS */
+
+.hero > .container > img {
+    width: 48%;
+    max-width: 560px;
+    height: auto;
+}
+
+/* ANIMACION DEL PROFESOR */
+
+.hero-graph {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    -webkit-mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+    mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+}
+
+.hero-graph canvas {
+    display: block;
+    background: transparent;
+    pointer-events: none;
+}
+
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.hero-buttons a:first-child {
+    background-color: #171717;
+    color: white;
+}
+
+.hero-buttons a:last-child {
+    color: #171717;
+    border: 1px solid #cccccc;
+}
+
+.hero-buttons a:hover {
+    opacity: 0.8;
 }
