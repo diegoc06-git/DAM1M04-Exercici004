@@ -1,1 +1,110 @@
-/*Estilos de la paginna index*
+/* Seccion 6, la parte negra del 13,000 */
+
+.seccion-field {
+    /* Fondo negro con un poco de verde */
+    background: radial-gradient(
+        ellipse at top right,
+        #29483d 0%,
+        #0e0f12 60%
+    );
+
+    color: white;
+    padding: 100px 10%;
+
+    /* Para poner las dos partes al lado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Parte izquierda donde esta el numero */
+.seccion-field .field-izquierda {
+    width: 55%;
+}
+
+/* Cuadro de la derecha */
+.seccion-field .field-derecha {
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #34363b;
+    border-top: 2px solid #6a9479;
+    border-radius: 10px;
+
+    /* Fondo un poco transparente */
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Titulo pequeño */
+.seccion-field h1 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #a1a1aa;
+    letter-spacing: 2px;
+}
+
+/* Linea de colores antes del titulo */
+.seccion-field h1::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 5px;
+    margin-right: 8px;
+    background: linear-gradient(to right, #91c76f, #5caed8, #9c65c9);
+}
+
+/* Numero 13,000 */
+.seccion-field h2 {
+    font-size: 85px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+/* Texto debajo del numero */
+.seccion-field .field-izquierda h3 {
+    font-size: 10px;
+    color: #a1a1aa;
+    letter-spacing: 2px;
+}
+
+/* Parrafos */
+.seccion-field .field-izquierda p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #a1a1aa;
+}
+
+/* Linea que separa los textos */
+.seccion-field hr {
+    border: none;
+    border-top: 1px solid #34363b;
+    margin: 30px 0;
+}
+
+/* Titulo del cuadro */
+.seccion-field .field-derecha h3 {
+    font-size: 11px;
+    color: #a1a1aa;
+}
+
+/* Filas con los datos */
+.seccion-field .field-fila {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #34363b;
+    padding: 15px 0;
+}
+
+/* Texto de cada fila */
+.seccion-field .field-fila span {
+    font-size: 12px;
+    color: #a1a1aa;
+}
+
+/* Numeros de cada fila */
+.seccion-field .field-fila strong {
+    font-size: 16px;
+    font-weight: 500;
+}
