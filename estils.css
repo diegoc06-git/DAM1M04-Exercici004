@@ -1,3 +1,390 @@
+/* CONFIGURACIÓN GENERAL */
+
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.platform-content > p:first-child {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+nav img {
+    width: 130px;
+}
+
+nav div {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #222222;
+    text-decoration: none;
+}
+
+
+/* HERO */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 650px;
+    padding: 80px 5%;
+
+    background:
+        radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%),
+        radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%),
+        #fbfbfa;
+}
+
+/* CONTENEDOR */
+
+.hero > .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* TEXTO */
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero-content > img {
+    width: 50px;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 500;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg, #54b9a2, #a54bd5);
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* BOTONES */
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* IMAGEN NEXUS */
+
+.hero > .container > img {
+    width: 48%;
+    max-width: 560px;
+    height: auto;
+}
+
+/* ANIMACION DEL PROFESOR */
+
+.hero-graph {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    -webkit-mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+    mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+}
+
+.hero-graph canvas {
+    display: block;
+    background: transparent;
+    pointer-events: none;
+}
+
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.hero-buttons a:first-child {
+    background-color: #171717;
+    color: white;
+}
+
+.hero-buttons a:last-child {
+    color: #171717;
+    border: 1px solid #cccccc;
+}
+
+.hero-buttons a:hover {
+    opacity: 0.8;
+}
+
+
+/* PLATFORM */
+
+.platform {
+    padding: 100px 5%;
+    background-color: #fbfbfa;
+}
+
+.platform-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.platform-content > p:first-child {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #777777;
+}
+
+.platform h2 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.platform-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.platform-cards article {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.platform-cards article:nth-child(1) {
+    background-color: #eef7f0;
+    border-color: #cfe5d5;
+}
+
+.platform-cards article:nth-child(2) {
+    background-color: #eef3fa;
+    border-color: #d4e0f0;
+}
+
+.platform-cards article:nth-child(3) {
+    background-color: #f7eff9;
+    border-color: #e5d4eb;
+}
+
+.platform-cards h3,
+.platform-core h3 {
+    font-size: 20px;
+}
+
+.platform-cards p,
+.platform-core p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+.platform-core {
+    margin-top: 20px;
+    padding: 25px 30px;
+    border-radius: 16px;
+    background-color: #f0efed;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.platform-core h3 {
+    width: 140px;
+}
+
+.platform-core p {
+    flex: 1;
+}
+
+.platform-content > p:last-child {
+    margin-top: 35px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* MESSAGE */
+
+.message {
+    padding: 65px 5%;
+    text-align: center;
+
+    background:
+        radial-gradient(ellipse at 10% 100%, #e2edda, transparent 50%),
+        radial-gradient(ellipse at 90% 0%, #e0eaf5, transparent 50%),
+        #f4f3ef;
+
+    color: #333333;
+}
+
+.message p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.message p:last-child {
+    margin-top: 20px;
+    color: #777777;
+}
+
+/* OPERATIONAL VALUE */
+
+.operational-value {
+    padding: 80px 5%;
+    background-color: #fbfbfa;
+}
+
+.operational-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.operational-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #777777;
+}
+
+.operational-content h2 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.value-panel {
+    padding: 35px;
+    background-color: white;
+    border: 1px solid #d9e4df;
+    border-radius: 18px;
+}
+
+.value-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #888888;
+}
+
+.value-cards {
+    display: flex;
+    gap: 40px;
+}
+
+.value-cards article {
+    flex: 1;
+    padding-top: 25px;
+}
+
+.value-cards article p:first-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: #777777;
+}
+
+.value-cards h3 {
+    font-size: 64px;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #303038;
+}
+
+.value-cards h3 span {
+    font-size: 32px;
+    color: #888888;
+    font-weight: 400;
+}
+
+.value-cards article p {
+    font-size: 13px;
+    color: #888888;
+}
+
+.value-cards article > span {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #e6f3ef;
+    color: #477d6d;
+    font-size: 12px;
+}
+
+/* DETALLES DEL PANEL */
+
+.value-heading {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.value-cards article p:first-child::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 4px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #54b9a2, #568bd5);
+    border-radius: 5px;
+}
+
+.operational-content > p:first-child::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: linear-gradient(90deg, #54b9a2, #568bd5);
+    border-radius: 5px;
+}
+
+
 /* Seccion 6, la parte negra del 13,000 */
 
 .seccion-field {
@@ -960,4 +1347,3 @@
         gap: 15px;
     }
 }
-
