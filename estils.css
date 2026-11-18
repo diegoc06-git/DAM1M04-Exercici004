@@ -716,3 +716,248 @@
         font-size: 27px;
     }
 }
+
+
+/* Seccion 10, aqui hago la parte de Get Started */
+
+/* Pongo el fondo claro y dejo espacio alrededor */
+.seccion-getstarted {
+    background:
+        radial-gradient(ellipse at bottom right, #f1dfe6 0%, transparent 40%),
+        radial-gradient(ellipse at top left, #f0f1f1 0%, transparent 45%),
+        #f5f3ef;
+    color: #29292e;
+    padding: 45px 5% 55px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Dejo espacio debajo del titulo y los botones */
+.seccion-getstarted .getstarted-inicio {
+    margin-bottom: 90px;
+}
+
+/* Hago pequeño el texto GET STARTED */
+.seccion-getstarted .getstarted-etiqueta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #8b8b91;
+    margin: 0 0 22px;
+}
+
+/* Pongo el titulo grande y separado en dos lineas */
+.seccion-getstarted .getstarted-inicio h2 {
+    font-size: clamp(35px, 5.5vw, 68px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 0 0 22px;
+}
+
+/* Añado el degradado verde, azul y morado al texto */
+.seccion-getstarted .getstarted-inicio h2 span {
+    background: linear-gradient(to right, #6cc57c, #459fdb, #8861d8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Cambio el color y tamaño de la descripcion */
+.seccion-getstarted .getstarted-descripcion {
+    font-size: 17px;
+    color: #8a8a90;
+    margin: 0 0 28px;
+}
+
+/* Coloco los dos botones uno al lado del otro */
+.seccion-getstarted .getstarted-botones {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hago el boton negro de Book a Demo */
+.seccion-getstarted .getstarted-demo {
+    display: inline-block;
+    background-color: #202126;
+    color: white;
+    padding: 11px 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* El segundo enlace no lleva fondo */
+.seccion-getstarted .getstarted-plataforma {
+    color: #29292e;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Separo la flecha del texto */
+.seccion-getstarted .getstarted-plataforma span {
+    margin-left: 12px;
+}
+
+/* Pongo los tres datos debajo de una linea */
+.seccion-getstarted .getstarted-informacion {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid #e4e1df;
+    padding-top: 28px;
+}
+
+/* Añado espacio dentro de cada apartado */
+.seccion-getstarted .getstarted-dato {
+    padding: 15px 25px;
+    border-right: 1px solid #e4e1df;
+}
+
+/* Quito el borde del ultimo apartado */
+.seccion-getstarted .getstarted-dato:last-child {
+    border-right: none;
+}
+
+/* Añado una linea de colores antes del nombre */
+.seccion-getstarted .getstarted-dato-titulo::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin-bottom: 12px;
+    background: linear-gradient(to right, #91c76f, #5caed8, #9c65c9);
+}
+
+/* Hago pequeños los nombres APPROVALS, AUDIT y SECURITY */
+.seccion-getstarted .getstarted-dato-titulo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #929299;
+    margin: 0 0 10px;
+}
+
+/* Ajusto el texto de los tres apartados */
+.seccion-getstarted .getstarted-dato p:last-child {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Footer, la parte negra del final */
+
+/* Pongo el logo, los enlaces y el copyright en una fila */
+.footer-strata {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #19191d;
+    color: #a3a3ad;
+    padding: 30px 5%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Pongo el logo y el nombre STRATA juntos */
+.footer-strata .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+/* Le doy colores al simbolo del logo */
+.footer-strata .footer-icono {
+    font-size: 20px;
+    background: linear-gradient(135deg, #6dc67b, #4a9fe0, #a56be0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Coloco los enlaces uno al lado del otro */
+.footer-strata .footer-enlaces {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Quito el subrayado de los enlaces */
+.footer-strata .footer-enlaces a {
+    color: #888892;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+/* Cambio el color cuando paso el raton */
+.footer-strata .footer-enlaces a:hover {
+    color: white;
+}
+
+/* Ajusto el texto del copyright */
+.footer-strata .footer-copyright {
+    font-size: 11px;
+    color: #888892;
+    margin: 0;
+}
+
+/* Adapto la seccion para tablets */
+@media (max-width: 800px) {
+
+    .seccion-getstarted {
+        padding: 55px 25px;
+    }
+
+    .seccion-getstarted .getstarted-inicio {
+        margin-bottom: 65px;
+    }
+
+    .seccion-getstarted .getstarted-inicio h2 {
+        font-size: 42px;
+    }
+
+    .footer-strata {
+        flex-wrap: wrap;
+        padding: 30px 25px;
+    }
+}
+
+/* En movil pongo los apartados uno debajo de otro */
+@media (max-width: 480px) {
+
+    .seccion-getstarted .getstarted-inicio h2 {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    .seccion-getstarted .getstarted-inicio h2 br {
+        display: none;
+    }
+
+    .seccion-getstarted .getstarted-informacion {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-getstarted .getstarted-dato {
+        border-right: none;
+        border-bottom: 1px solid #e4e1df;
+        padding: 18px 0;
+    }
+
+    .seccion-getstarted .getstarted-dato:last-child {
+        border-bottom: none;
+    }
+
+    .footer-strata {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-strata .footer-enlaces {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
