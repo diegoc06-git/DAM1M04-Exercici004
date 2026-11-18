@@ -190,6 +190,21 @@ nav a {
     background-color: white;
 }
 
+.platform-cards article:nth-child(1) {
+    background-color: #eef7f0;
+    border-color: #cfe5d5;
+}
+
+.platform-cards article:nth-child(2) {
+    background-color: #eef3fa;
+    border-color: #d4e0f0;
+}
+
+.platform-cards article:nth-child(3) {
+    background-color: #f7eff9;
+    border-color: #e5d4eb;
+}
+
 .platform-cards h3,
 .platform-core h3 {
     font-size: 20px;
@@ -207,6 +222,18 @@ nav a {
     padding: 25px 30px;
     border-radius: 16px;
     background-color: #f0efed;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.platform-core h3 {
+    width: 140px;
+}
+
+.platform-core p {
+    flex: 1;
 }
 
 .platform-content > p:last-child {
@@ -220,22 +247,31 @@ nav a {
 .message {
     padding: 65px 5%;
     text-align: center;
-    background-color: #171717;
-    color: white;
+
+    background:
+        radial-gradient(ellipse at 10% 100%, #e2edda, transparent 50%),
+        radial-gradient(ellipse at 90% 0%, #e0eaf5, transparent 50%),
+        #f4f3ef;
+
+    color: #333333;
 }
 
 .message p {
     max-width: 800px;
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 1.5;
 }
 
+.message p:last-child {
+    margin-top: 20px;
+    color: #777777;
+}
 
 /* OPERATIONAL VALUE */
 
 .operational-value {
-    padding: 100px 5%;
+    padding: 80px 5%;
     background-color: #fbfbfa;
 }
 
@@ -244,7 +280,7 @@ nav a {
     margin: 0 auto;
 }
 
-.operational-content > p:first-child {
+.operational-label {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
     letter-spacing: 2px;
@@ -254,18 +290,14 @@ nav a {
 .operational-content h2 {
     font-size: 42px;
     font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.operational-content > p:nth-child(3) {
-    color: #666666;
+    line-height: 1.2;
     margin-bottom: 40px;
 }
 
 .value-panel {
     padding: 35px;
-    background-color: #171717;
-    color: white;
+    background-color: white;
+    border: 1px solid #d9e4df;
     border-radius: 18px;
 }
 
@@ -273,41 +305,81 @@ nav a {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
-    color: #aaaaaa;
-    margin-bottom: 40px;
+    color: #888888;
 }
 
 .value-cards {
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .value-cards article {
     flex: 1;
-    padding: 25px;
-    background-color: #242424;
-    border-radius: 12px;
+    padding-top: 25px;
 }
 
 .value-cards article p:first-child {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
-    color: #aaaaaa;
+    color: #777777;
 }
 
 .value-cards h3 {
-    font-size: 38px;
-    margin: 20px 0;
+    font-size: 64px;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #303038;
+}
+
+.value-cards h3 span {
+    font-size: 32px;
+    color: #888888;
+    font-weight: 400;
 }
 
 .value-cards article p {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 13px;
+    color: #888888;
 }
 
-.value-cards article span {
-    color: #75cbb0;
-    font-size: 13px;
+.value-cards article > span {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #e6f3ef;
+    color: #477d6d;
+    font-size: 12px;
+}
+
+/* DETALLES DEL PANEL */
+
+.value-heading {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.value-cards article p:first-child::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 4px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #54b9a2, #568bd5);
+    border-radius: 5px;
+}
+
+.operational-content > p:first-child::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: linear-gradient(90deg, #54b9a2, #568bd5);
+    border-radius: 5px;
 }
