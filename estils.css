@@ -249,3 +249,241 @@
         text-align: left;
     }
 }
+
+
+/* Seccion 8, aqui hago los estilos de Strata Atlas */
+
+/* Pongo el fondo claro y dejo espacio por los lados */
+.seccion-atlas {
+    background-color: #fbfbfa;
+    color: #27272b;
+    padding: 80px 10%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Dejo espacio entre el titulo y la imagen de Atlas */
+.seccion-atlas .atlas-inicio {
+    margin-bottom: 40px;
+}
+
+/* Hago mas pequeño el texto de STRATA ATLAS */
+.seccion-atlas .atlas-etiqueta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Añado la linea de colores delante del texto */
+.seccion-atlas .atlas-etiqueta::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 5px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background: linear-gradient(to right, #91c76f, #5caed8, #9c65c9);
+}
+
+/* Cambio el tamaño del titulo principal */
+.seccion-atlas .atlas-inicio h2 {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin: 0 0 18px;
+}
+
+/* Pongo la descripcion en gris y separo las lineas */
+.seccion-atlas .atlas-descripcion {
+    font-size: 15px;
+    color: #85858b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* La imagen ocupa todo el ancho disponible */
+.seccion-atlas .atlas-imagen {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Hago que la imagen se adapte sin deformarse */
+.seccion-atlas .atlas-imagen img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Pongo las cuatro caracteristicas una al lado de otra */
+.seccion-atlas .atlas-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+/* Añado una linea encima de cada caracteristica */
+.seccion-atlas .atlas-caracteristica {
+    border-top: 1px solid #777;
+    padding-top: 15px;
+}
+
+/* Cambio el tamaño de los nombres Map, Structure, Operate y Refine */
+.seccion-atlas .atlas-caracteristica h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+
+/* Pongo los textos de las caracteristicas en gris */
+.seccion-atlas .atlas-caracteristica p {
+    font-size: 12px;
+    color: #85858b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Limito el ancho del texto que explica como funciona Atlas */
+.seccion-atlas .atlas-explicacion {
+    max-width: 550px;
+    margin-bottom: 35px;
+}
+
+.seccion-atlas .atlas-explicacion p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Divido la parte de abajo en el buscador y las tarjetas */
+.seccion-atlas .atlas-consulta {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+/* Hago el cuadro donde aparece la pregunta */
+.seccion-atlas .atlas-buscador {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 9px;
+    background-color: white;
+    padding: 9px 10px;
+    min-height: 48px;
+}
+
+/* Cambio el tamaño y color de la lupa */
+.seccion-atlas .atlas-lupa {
+    font-size: 20px;
+    color: #777;
+}
+
+/* Dejo que el texto de la pregunta ocupe el espacio disponible */
+.seccion-atlas .atlas-pregunta-texto {
+    flex: 1;
+    min-width: 0;
+    font-size: 11px;
+    color: #555;
+}
+
+/* Pongo el boton Ask con fondo oscuro */
+.seccion-atlas .atlas-buscador button {
+    background-color: #25252b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+/* Hago pequeño el titulo EDITABLE NODES */
+.seccion-atlas .atlas-nodos-titulo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #777;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+}
+
+/* Coloco las dos tarjetas una al lado de otra */
+.seccion-atlas .atlas-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+/* Pongo un borde verde claro alrededor de las tarjetas */
+.seccion-atlas .atlas-tarjeta {
+    border: 1px solid #cbdccc;
+    border-radius: 9px;
+    padding: 15px;
+    background-color: #fbfcfa;
+}
+
+/* Hago mas pequeño el titulo de cada tarjeta */
+.seccion-atlas .atlas-tarjeta-tipo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.3px;
+    color: #777;
+}
+
+/* Ajusto el texto que aparece dentro de las tarjetas */
+.seccion-atlas .atlas-tarjeta p {
+    font-size: 11px;
+    line-height: 1.6;
+    margin: 0 0 12px;
+}
+
+/* Pongo en verde el texto Confirmed by your firm */
+.seccion-atlas .atlas-tarjeta span {
+    font-size: 10px;
+    color: #60966d;
+}
+
+/* Adapto la seccion para tablets y pantallas pequeñas */
+@media (max-width: 800px) {
+
+    /* Reduzco los espacios de los lados */
+    .seccion-atlas {
+        padding: 60px 25px;
+    }
+
+    /* Hago el titulo mas pequeño */
+    .seccion-atlas .atlas-inicio h2 {
+        font-size: 32px;
+    }
+
+    /* Paso las cuatro caracteristicas a dos columnas */
+    .seccion-atlas .atlas-caracteristicas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /* Pongo el buscador encima de las tarjetas */
+    .seccion-atlas .atlas-consulta {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+/* Adapto las tarjetas para moviles mas pequeños */
+@media (max-width: 480px) {
+
+    /* Pongo las tarjetas una debajo de la otra */
+    .seccion-atlas .atlas-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reduzco el titulo para que quepa en movil */
+    .seccion-atlas .atlas-inicio h2 {
+        font-size: 29px;
+    }
+}
