@@ -11,7 +11,7 @@
     color: white;
     padding: 100px 10%;
 
-    /* Para poner las dos partes al lado */
+    /* Pongo 2 partes de lado */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Parte izquierda donde esta el numero */
+/* Izquierda donde esta el numero */
 .seccion-field .field-izquierda {
     width: 55%;
 }
@@ -107,4 +107,145 @@
 .seccion-field .field-fila strong {
     font-size: 16px;
     font-weight: 500;
+}
+
+
+/* Seccion 7, Workflows */
+
+/* Aqui pongo el fondo de la seccion de un color claro
+   y dejo espacio por los lados para que no quede todo pegado */
+.seccion-workflows {
+    background-color: #f7f6f2;
+    color: #222;
+    padding: 70px 10%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Aqui dejo un espacio entre el titulo y la lista de workflows */
+.seccion-workflows .workflows-inicio {
+    margin-bottom: 35px;
+}
+
+/* Este es el texto pequeño que aparece encima del titulo
+   le pongo otra letra y un poco de espacio entre las letras */
+.seccion-workflows .workflows-etiqueta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+/* Aqui cambio el tamaño del titulo principal para que no
+   salga tan grande como antes y se parezca mas a la imagen */
+.seccion-workflows .workflows-inicio h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 18px;
+    max-width: 850px;
+}
+
+/* Este es el texto que explica de que van los workflows
+   le pongo un color gris y limito el ancho para que no ocupe todo */
+.seccion-workflows .workflows-descripcion {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0;
+}
+
+/* Aqui organizo cada workflow en 4 columnas
+   en la primera va el codigo, luego el nombre,
+   despues la descripcion y al final la flecha */
+.seccion-workflows .workflow-fila {
+    display: grid;
+    grid-template-columns: 145px 1fr 1.8fr 25px;
+    gap: 20px;
+    align-items: start;
+    padding: 24px 0;
+    border-top: 1px solid #e2e0dc;
+}
+
+/* Aqui hago que el codigo de cada workflow salga
+   dentro de una etiqueta pequeña con fondo beige
+   y bordes redondeados como en la imagen */
+.seccion-workflows .workflow-codigo {
+    display: inline-block;
+    justify-self: start;
+    width: fit-content;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.5px;
+    color: #a77b49;
+    background-color: #f3e8d5;
+    border-radius: 20px;
+    padding: 5px 9px;
+    margin: 0;
+}
+
+/* Aqui pongo el nombre de cada workflow en negro
+   y un poco mas grande que el texto de la descripcion */
+.seccion-workflows .workflow-fila h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Este es el texto donde se explica lo que hace
+   cada workflow, lo pongo mas pequeño y de color gris */
+.seccion-workflows .workflow-texto {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Aqui pongo la flecha al final de cada fila
+   y la alineo a la derecha */
+.seccion-workflows .workflow-flecha {
+    font-size: 17px;
+    color: #777;
+    text-align: right;
+}
+
+/* Aqui añado una linea debajo del ultimo workflow
+   para que quede igual que las otras separaciones */
+.seccion-workflows .workflow-fila:last-child {
+    border-bottom: 1px solid #e2e0dc;
+}
+
+/* Aqui le pongo un fondo un poco diferente al workflow
+   de las apelaciones para que destaque como en la referencia */
+.seccion-workflows .workflow-fila:nth-of-type(3) {
+    background-color: rgba(230, 225, 215, 0.18);
+}
+
+/* Esta parte es para cuando la pagina se abre en un movil
+   y no hay suficiente espacio para las 4 columnas */
+@media (max-width: 800px) {
+
+    /* Reduzco los espacios para que quepa mejor en movil */
+    .seccion-workflows {
+        padding: 50px 25px;
+    }
+
+    /* Hago el titulo mas pequeño para que no se salga */
+    .seccion-workflows .workflows-inicio h2 {
+        font-size: 28px;
+    }
+
+    /* Aqui pongo el contenido de cada workflow uno debajo
+       del otro porque en movil no caben las 4 columnas */
+    .seccion-workflows .workflow-fila {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    /* La flecha la pongo a la izquierda cuando es movil */
+    .seccion-workflows .workflow-flecha {
+        text-align: left;
+    }
 }
